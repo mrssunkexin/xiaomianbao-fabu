@@ -24,7 +24,7 @@ cards = "\n".join(f'''<article class="card" data-id="{i.get("file", i["id"])}">
 <section><div class="lab"><span>标签</span><button class="copy" type="button">复制</button></div><div class="text">{html.escape(i["tags"])}</div></section>
 <button class="copy all" type="button" data-all="1">复制文案＋标签</button>
 </article>''' for i in items)
-page = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>小面包 发布文案</title><style>
+page = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>2号发布文案</title><style>
 :root{{--bg:#fbf6ee;--card:#fff;--fg:#2b2520;--muted:#7a6c5e;--line:#eadfcf;--accent:#f0683c;--accent-fg:#fff;--soft:#fff0e4;--done:#eef3ea}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#181512;--card:#221e1a;--fg:#efe9e2;--muted:#a89a8b;--line:#3a322a;--accent:#ff8a5c;--accent-fg:#1a120c;--soft:#33261d;--done:#1f2a20;color-scheme:dark}}}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}}
@@ -42,7 +42,7 @@ h1{{font-size:22px;margin:0}}header p{{margin:4px 0 0;color:var(--muted);font-si
 .copy.ok{{background:#3aa08f;color:#fff}}.copy.all{{width:100%;padding:10px;font-size:14px}}
 .hide{{display:none}}
 </style></head><body><div class="wrap">
-<header><h1>小面包 发布文案</h1><p>共 {len(items)} 条，最新的在最上面 · 更新于 {now}</p></header>
+<header><h1>2号发布文案</h1><p>共 {len(items)} 条，最新的在最上面 · 更新于 {now}</p></header>
 <div class="tabs"><button type="button" data-f="all" aria-pressed="true">全部</button><button type="button" data-f="todo" aria-pressed="false">未发</button><button type="button" data-f="done" aria-pressed="false">已发</button></div>
 <main class="list">
 {cards}
